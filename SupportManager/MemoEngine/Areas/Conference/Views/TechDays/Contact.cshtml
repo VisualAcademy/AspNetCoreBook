@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "연락처";
+}
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}
+
+
+<h2>연락처</h2>
+
+<div class="span12">
+    <div class="whity content">
+        <!-- Main Content Starts Here -->
+        <!-- Content should be encloased inside div with the class "posts" -->
+        <div class="posts">
+            <!-- Each entry should be enclosed inside div with the class "entry" -->
+            <div class="entry">
+                <div class="padd">
+                    <!-- Contact Page title -->
+                    <h2>Contact Us</h2>
+                    <!-- Contact Page Para -->
+                    <p>데모 사이트입니다. 값을 입력해도 소용이 없습니다^^</p>
+                </div>
+
+                <div class="row">
+                    <div class="span8">
+                        <div class="padd">
+                            <div class="co-form">
+                                <form class="form-horizontal" method="post">
+                                    <fieldset>
+                                        <div class="control-group">
+                                            <label class="control-label" for="name">Name</label>
+                                            <div class="controls">
+                                                <input type="text" class="input-medium" id="name" name="name" data-val="true" data-val-required="*">
+                                                <span class="field-validation-valid" data-valmsg-for="name" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="email">Email</label>
+                                            <div class="controls">
+                                                <input type="text" class="input-medium" id="email" name="email" data-val="true" data-val-required="*" data-val-email="Not Valid">
+                                                <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="website">Website</label>
+                                            <div class="controls">
+                                                <input type="text" class="input-medium" id="website" name="website" data-val="true" data-val-required="*">
+                                                <span class="field-validation-valid" data-valmsg-for="website" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="comment">Message</label>
+                                            <div class="controls">
+                                                <textarea class="input-medium" id="comment" rows="3" name="comment" data-val="true" data-val-required="*"></textarea>
+                                                <span class="field-validation-valid" data-valmsg-for="comment" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions">
+                                            <button type="submit" class="btn">Send</button>
+                                            @if (ViewBag.MailSent != null && ViewBag.MailSent)
+                                            {
+                                                <div>Mail Sent!</div>
+                                            }
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="padd">
+                            <p class="caddress">
+                                <address>
+                                    <strong>Twitter, Inc.</strong><br>
+                                    795 Folsom Ave, Suite 600<br>
+                                    San Francisco, CA 94107<br>
+                                    <abbr title="Phone">P:</abbr>
+                                    (123) 456-7890.<br>
+                                    <br>
+                                    <strong>Full Name</strong><br>
+                                    <a href="mailto:#">first.last@gmail.com</a>
+                                </address>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gmap">
+                    <div class="padd">
+                        <!-- Goto Google maps and copy the embed code of your location. Replace the below embed code with your code. -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d791.1162760504421!2d126.6713231!3d37.5205321!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1425482655875" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content Ends Here -->
+    </div>
+
+</div>

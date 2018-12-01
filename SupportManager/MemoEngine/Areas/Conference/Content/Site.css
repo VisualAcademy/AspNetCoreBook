@@ -1,0 +1,211 @@
+﻿body {
+    font-family: 'Malgun Gothic';
+    padding-top:50px;
+}
+
+.jumbotron {
+    padding:20px;
+}
+
+#body {
+    padding-top:5em;
+}
+
+
+
+/* ordered list */
+ol.round {
+    list-style-type: none;
+    padding-left: 0;
+    background-color:White;
+}
+
+    ol.round li {
+        margin: 25px 0;
+        padding-left: 45px;
+    }
+    
+        ol.round li.one {
+            background: url("../images/orderedlistOne.gif") no-repeat;        
+        }
+    
+        ol.round li.two {
+            background: url("../images/orderedlistTwo.gif") no-repeat;        
+        }
+    
+        ol.round li.three {
+            background: url("../images/orderedlistThree.gif") no-repeat;        
+        }
+    
+        ol.round li.four {
+            background: url("../images/orderedlistFour.gif") no-repeat;        
+        }
+    
+        ol.round li.five {
+            background: url("../images/orderedlistFive.gif") no-repeat;        
+        }
+    
+        ol.round li.six {
+            background: url("../images/orderedlistSix.gif") no-repeat;        
+        }
+    
+        ol.round li.seven {
+            background: url("../images/orderedlistSeven.gif") no-repeat;        
+        }
+    
+        ol.round li.eight {
+            background: url("../images/orderedlistEight.gif") no-repeat;        
+        }
+    
+        ol.round li.nine {
+            background: url("../images/orderedlistNine.gif") no-repeat;        
+        }
+    
+        ol.round li.ten {
+            background: url("../images/orderedlistTen.gif") no-repeat;        
+        }
+
+        ol.round li.eleven {
+            background: url("../images/orderedListEleven.gif") no-repeat;        
+        }
+
+
+@media only screen and (max-width: 768px) {
+    /* ordered list */
+    ol.round {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+        ol.round li {
+            padding-left: 10px;
+            margin: 25px 0;
+        }
+    
+            ol.round li.one,
+            ol.round li.two,
+            ol.round li.three,
+            ol.round li.four,
+            ol.round li.five,
+            ol.round li.six,
+            ol.round li.seven,
+            ol.round li.eight,
+            ol.round li.nine,
+            ol.round li.ten,
+            ol.round li.eleven {
+                background: none;        
+            }
+}
+
+
+
+/* featured */
+.featured {
+    background-color: #fff;
+}
+
+    .featured .content-wrapper {
+        background-color: #7ac0da;
+        background-image: -ms-linear-gradient(left, #7AC0DA 0%, #A4D4E6 100%);
+        background-image: -o-linear-gradient(left, #7AC0DA 0%, #A4D4E6 100%);
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7AC0DA), color-stop(1, #A4D4E6));
+        background-image: -webkit-linear-gradient(left, #7AC0DA 0%, #A4D4E6 100%);
+        background-image: linear-gradient(left, #7AC0DA 0%, #A4D4E6 100%);
+        color: #3e5667;
+        padding: 20px 40px 30px 40px;
+    }
+
+        .featured hgroup.title h1, .featured hgroup.title h2 {
+            color: #fff;
+        }
+
+        .featured p {
+            font-size: 1.1em;
+        }
+
+
+/* features */
+section.feature {
+    width: 300px;
+    float: left;
+    padding: 10px;
+}
+
+
+footer {
+    clear: both;
+    background-color: #e2e2e2;
+    font-size: .8em;
+    height: 100px;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+
+    /* main layout  
+    ----------------------------------------------------------*/
+    .main-content,
+    .featured + .main-content {
+        background-position: 10px 0;
+    }
+    
+    .content-wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .featured .content-wrapper {
+        padding: 10px;
+    }
+
+    /* features */
+    section.feature {
+        float: none;
+        padding: 10px;
+        width: auto;
+    }
+
+        section.feature img {
+            color: #999;
+            content: attr(alt);
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+
+
+    /* footer  
+    ----------------------------------------------------------*/    
+    footer .float-left,
+    footer .float-right {
+        float: none;
+    }
+    
+    footer {
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+        footer p {
+            margin: 0;
+        }
+    
+        ul#social {
+            padding:0;
+            margin: 0;
+        }
+    
+         a.facebook, a.twitter {
+            background: none;
+            display: inline;
+            float: none;
+            height: auto;
+            padding-left: 0;
+            text-indent: 0;
+            width: auto;
+        }    
+
+
+}

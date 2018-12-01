@@ -1,0 +1,58 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "태그 리스트";
+}
+
+<h2>태그 리스트</h2>
+
+<ul>
+    @foreach (var tag in Model)
+    {
+        <li>@Html.ActionLink(tag, "SessionsByTag", new { tag })</li>
+    }
+</ul>
+
+
+
+
+
+
+
+@section scripts {
+
+<!-- http://www.goat1000.com/tagcanvas.php -->
+<script src="@Url.Content("~/Scripts/jquery.tagcanvas.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (!$('#myCanvas').tagcanvas({
+            textColour: '#ff0000',
+            outlineColour: '#ff00ff',
+            reverse: true,
+            depth: 0.8,
+            maxSpeed: 0.05
+        }, 'tags')) {
+            // something went wrong, hide the canvas container
+            $('#myCanvasContainer').hide();
+        }
+    });
+</script>
+
+}
+
+<h2>태그 구름</h2>
+
+<div id="myCanvasContainer">
+    <canvas width="300" height="300" id="myCanvas">
+        현재 브라우저는 HTML5를 지원하지 않습니다.
+    </canvas>
+</div>
+
+<div id="tags">
+    <ul>
+        @foreach (var tag in Model)
+        {
+            <li>@Html.ActionLink(tag, "SessionsByTag", new { tag })</li>
+        }
+    </ul>
+</div>

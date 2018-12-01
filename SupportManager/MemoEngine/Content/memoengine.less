@@ -1,0 +1,47 @@
+﻿/* Variables */
+@h2Color: #0094ff;
+
+.subTitle1 {
+    color: @h2Color;
+}
+
+h2 {
+    color: @h2Color;
+}
+
+/* Mixins */
+.borderRadius (@radius: 5px) {
+    border-radius: @radius;
+}
+
+.subTitle2 {
+    .borderRadius;
+}
+
+.footerSection {
+    .borderRadius(10px);
+}
+
+/* Nested Rules */
+.subTitle3 {
+    p {
+        font-size: 12px;
+        font-weight: bold; 
+        a {
+            text-decoration: none; 
+            &:hover {
+                border: 1px solid gray;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.me-gallery {
+    margin-bottom: 25px; 
+}
+

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "웹캠프 2015";
+}
+
+
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h2>@ViewBag.Message</h2>
+            <h3>현재 <span style="color:red;">@(ViewBag.NumSessions)</span>개의 세션이 있습니다.</h3>
+        </hgroup>
+        <p>
+            <h3>WebCamps 2015</h3>
+
+            <a href="/Index.html">SPA 버전으로 보기</a>, <a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032618340&culture=ko-KR">공식 사이트 바로가기</a>
+        </p>
+    </div>
+</section>
+
+<ul id="menu" data-role="listview" data-inset="true">
+    <li data-role="list-divider">선택</li>
+    <li>@Html.ActionLink("날짜", "AllDates", "Conference")</li>
+    <li>@Html.ActionLink("발표자", "AllSpeakers", "Conference")</li>
+    <li>@Html.ActionLink("커뮤니티", "AllCommunities", "Conference")</li>
+    <li>@Html.ActionLink("태그", "AllTags", "Conference")</li>
+</ul>

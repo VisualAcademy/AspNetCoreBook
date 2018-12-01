@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/LoginForm.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <form class="form-signin" role="form" action="/Account/Login" method="post">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <input type="text" id="txtUserID" name="txtUserID" class="form-control" placeholder="Email address" required autofocus />
+            <input type="password" id="txtPassword" name="txtPassword" class="form-control" placeholder="Password" required />
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me" /> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+
+    </div>
+</body>
+</html>

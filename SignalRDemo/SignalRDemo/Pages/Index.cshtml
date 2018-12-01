@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>채팅</h1>
+
+<form id="send-form" action="#">
+    메시지 전송: 
+    <input type="text" id="message-textbox" disabled />
+    <button id="send-button" type="submit" disabled>전송</button>
+</form>
+
+<ul id="messages-list"></ul>
+
+@section Scripts {
+    <script src="~/lib/signalr/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+}

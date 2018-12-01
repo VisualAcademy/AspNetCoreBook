@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>현재 접속자</title>
+</head>
+<body>
+    <span id="lblCurrentCounter" style="font-size:50px;"></span>
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script>
+        $(function () {
+            //[1] 채팅 서버 연결
+            var cnt = $.connection.currentCounter;
+            //[2] 서버 -> 클라이언트
+            cnt.client.hitRecoreded = function (_hitCounter) {
+                $("#lblCurrentCounter").text(_hitCounter); // 받기
+            };
+            //[3] 클라이언트 -> 서버
+            $.connection.hub.start().done(function () {
+                // 이 순간에 서버에 연결됨
+            });
+        });
+    </script>
+</body>
+</html>

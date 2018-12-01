@@ -1,0 +1,45 @@
+﻿/* Variables */
+@color : #0094ff;
+
+#header {
+    color: @color;
+}
+
+h2 {
+    color: @color;
+}
+
+/* Mixins */
+
+.rounded-corners (@radius: 5px) {
+    border-radius: @radius;
+}
+
+#header {
+    .rounded-corners;
+}
+
+#footer {
+    .rounded-corners(10px); 
+}
+
+/* Nested Rule */
+#header {
+
+    h1 {
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    p {
+        font-size: 12px;
+        a {
+            text-decoration: none;
+            &:hover { 
+                border-width:1px; 
+            }
+        }
+    }
+
+}

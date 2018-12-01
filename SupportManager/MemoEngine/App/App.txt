@@ -1,0 +1,8 @@
+﻿
+
+AngularJS와 같은 JavaScript 라이브러리의 최상위 컨테이너인
+
+app과 controller가 들어오는 곳
+
+또는 여러가지 JavaScript 라이브러리(durandla, ...)의 핵심 코드들이 들어오는 곳
+

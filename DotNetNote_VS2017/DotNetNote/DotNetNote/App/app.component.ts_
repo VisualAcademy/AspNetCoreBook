@@ -1,0 +1,19 @@
+﻿import { Component } from '@angular/core';
+@Component({
+    selector: 'my-app',
+    template: `
+<div class="text-center" *ngIf="isShow">
+    <a [href]="siteUrl" target="_blank">
+        <img [src]="imgUrl" alt="{{ siteName }}" />
+    </a>
+</div>
+`
+})
+export class AppComponent {
+
+    siteName: string = "데브렉";
+    siteUrl = "http://www.devlec.com";
+    imgUrl: string = "/images/devlec20160923.gif";
+    isShow: boolean = (new Date()).getSeconds() % 2 === 0; 
+
+}

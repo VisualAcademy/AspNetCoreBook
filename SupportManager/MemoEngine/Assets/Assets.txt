@@ -1,0 +1,5 @@
+﻿
+
+Assets 폴더: Silverlight/Windows Store와 같은 응용 프로그램에서의 자산(리소스)
+
+

@@ -1,0 +1,8 @@
+﻿<div ng-controller="photoGalleryController as vm" class="row">
+    <h2>{{ title }}</h2>
+    <div class="col-md-4 me-gallery" ng-repeat="photo in vm.photos">
+        <a href="#">
+            <img class="img-responsive" ng-src="{{ photo.fileName }}" />
+        </a>
+    </div>
+</div>

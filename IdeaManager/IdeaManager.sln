@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{76606AFC-CA3D-433D-B3A4-D32407BACB77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{000A9EDD-91EA-4DFE-94C0-4B17E33A2948}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "IdeaManager", "src\IdeaManager\IdeaManager.xproj", "{BA9C4E55-DC12-44E6-BA33-568D06910DE2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "IdeaManager.Database", "IdeaManager.Database\IdeaManager.Database.sqlproj", "{C0DF40AA-9A59-4286-8A1A-4899C53B3AED}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AngularIdeaManager", "AngularIdeaManager\AngularIdeaManager.xproj", "{6814F0F4-3B9E-4045-9438-9CE5097A0E9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA9C4E55-DC12-44E6-BA33-568D06910DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9C4E55-DC12-44E6-BA33-568D06910DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9C4E55-DC12-44E6-BA33-568D06910DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9C4E55-DC12-44E6-BA33-568D06910DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DF40AA-9A59-4286-8A1A-4899C53B3AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DF40AA-9A59-4286-8A1A-4899C53B3AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DF40AA-9A59-4286-8A1A-4899C53B3AED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C0DF40AA-9A59-4286-8A1A-4899C53B3AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DF40AA-9A59-4286-8A1A-4899C53B3AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DF40AA-9A59-4286-8A1A-4899C53B3AED}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6814F0F4-3B9E-4045-9438-9CE5097A0E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6814F0F4-3B9E-4045-9438-9CE5097A0E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6814F0F4-3B9E-4045-9438-9CE5097A0E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6814F0F4-3B9E-4045-9438-9CE5097A0E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA9C4E55-DC12-44E6-BA33-568D06910DE2} = {76606AFC-CA3D-433D-B3A4-D32407BACB77}
+	EndGlobalSection
+EndGlobal

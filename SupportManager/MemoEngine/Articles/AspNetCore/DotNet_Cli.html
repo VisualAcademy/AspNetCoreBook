@@ -1,0 +1,1742 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="DotNet_Cli.files/filelist.xml">
+<link rel=Edit-Time-Data href="DotNet_Cli.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>박용준</o:Author>
+  <o:LastAuthor>박용준</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>14</o:TotalTime>
+  <o:Created>2016-06-20T03:46:00Z</o:Created>
+  <o:LastSaved>2016-06-20T03:46:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>272</o:Words>
+  <o:Characters>1552</o:Characters>
+  <o:Lines>12</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1821</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="DotNet_Cli.files/themedata.thmx">
+<link rel=colorSchemeMapping href="DotNet_Cli.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>KO</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="372">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1879048145 701988091 18 0 524289 0;}
+@font-face
+	{font-family:돋움체;
+	panose-1:2 11 6 9 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@맑은 고딕";
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1879048145 701988091 18 0 524289 0;}
+@font-face
+	{font-family:"\@돋움체";
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	mso-pagination:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"맑은 고딕";
+	mso-ascii-font-family:"맑은 고딕";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"맑은 고딕";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"맑은 고딕";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"머리글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	mso-pagination:none;
+	tab-stops:center 225.65pt right 451.3pt;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"맑은 고딕";
+	mso-ascii-font-family:"맑은 고딕";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"맑은 고딕";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"맑은 고딕";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"바닥글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	mso-pagination:none;
+	tab-stops:center 225.65pt right 451.3pt;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"맑은 고딕";
+	mso-ascii-font-family:"맑은 고딕";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"맑은 고딕";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"맑은 고딕";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:40.0pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:4.0gd;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	mso-pagination:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"맑은 고딕";
+	mso-ascii-font-family:"맑은 고딕";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"맑은 고딕";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"맑은 고딕";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.Char
+	{mso-style-name:"머리글 Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:머리글;}
+span.Char0
+	{mso-style-name:"바닥글 Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:바닥글;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"맑은 고딕";
+	mso-ascii-font-family:"맑은 고딕";
+	mso-ascii-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("DotNet_Cli.files/header.html") fs;
+	mso-footnote-continuation-separator:url("DotNet_Cli.files/header.html") fcs;
+	mso-endnote-separator:url("DotNet_Cli.files/header.html") es;
+	mso-endnote-continuation-separator:url("DotNet_Cli.files/header.html") ecs;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:3.0cm 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:620452471;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1814296000 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:40.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:60.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:80.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:100.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:120.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:140.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:160.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:180.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:200.0pt;
+	text-indent:-20.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"표준 표";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"맑은 고딕";
+	mso-ascii-font-family:"맑은 고딕";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"맑은 고딕";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"맑은 고딕";
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=KO link="#0563C1" vlink="#954F72" style='tab-interval:40.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>DotNet CLI</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:
+white;mso-font-kerning:0pt'>를 사용하여<span lang=EN-US> .NET Core </span>앱 생성 및 빌드 그리고
+실행<span lang=EN-US><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>작성자<span lang=EN-US>:
+</span>레드플러스<span lang=EN-US>(</span>박용준<span lang=EN-US>)<o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>소개<span lang=EN-US><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>.NET Core(</span><span lang=EN-US><a
+href="https://www.microsoft.com/net/core"><span style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;background:
+white;mso-highlight:white;mso-font-kerning:0pt'>https://www.microsoft.com/net/core</span></a></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>)</span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>가 설치되었다면<span
+lang=EN-US>, DotNet CLI(Command Line Interface)</span>인<span lang=EN-US> dotnet
+</span>명령어를 통해서<span lang=EN-US> .NET Core </span>콘솔 또는 웹 응용 프로그램을 만들 수가 있습니다<span
+lang=EN-US>. </span>이번 따라하기에서는<span lang=EN-US> dotnet </span>명령어를 통해서<span
+lang=EN-US> .NET Core </span>콘솔 응용 프로그램을 만들고 빌드하고 실행하는 내용을 다뤄보도록 하겠습니다<span
+lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>dotnet</span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>의 최소한의 명령어는 아래와 같습니다<span
+lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:40.0pt;margin-bottom:.0001pt;mso-para-margin-top:
+0cm;mso-para-margin-right:0cm;mso-para-margin-bottom:0cm;mso-para-margin-left:
+0gd;mso-para-margin-bottom:.0001pt;text-align:left;text-indent:-20.0pt;
+line-height:normal;mso-list:l0 level1 lfo1;mso-layout-grid-align:none;
+word-break:keep-all'><![if !supportLists]><span lang=EN-US style='font-size:
+9.5pt;font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings;color:black;background:white;mso-highlight:white;mso-font-kerning:
+0pt'><span style='mso-list:Ignore'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>dotnet new<o:p></o:p></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:40.0pt;margin-bottom:.0001pt;mso-para-margin-top:
+0cm;mso-para-margin-right:0cm;mso-para-margin-bottom:0cm;mso-para-margin-left:
+0gd;mso-para-margin-bottom:.0001pt;text-align:left;text-indent:-20.0pt;
+line-height:normal;mso-list:l0 level1 lfo1;mso-layout-grid-align:none;
+word-break:keep-all'><![if !supportLists]><span lang=EN-US style='font-size:
+9.5pt;font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings;color:black;background:white;mso-highlight:white;mso-font-kerning:
+0pt'><span style='mso-list:Ignore'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>dotnet restore<o:p></o:p></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:40.0pt;margin-bottom:.0001pt;mso-para-margin-top:
+0cm;mso-para-margin-right:0cm;mso-para-margin-bottom:0cm;mso-para-margin-left:
+0gd;mso-para-margin-bottom:.0001pt;text-align:left;text-indent:-20.0pt;
+line-height:normal;mso-list:l0 level1 lfo1;mso-layout-grid-align:none;
+word-break:keep-all'><![if !supportLists]><span lang=EN-US style='font-size:
+9.5pt;font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings;color:black;background:white;mso-highlight:white;mso-font-kerning:
+0pt'><span style='mso-list:Ignore'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>dotnet run<o:p></o:p></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:40.0pt;margin-bottom:.0001pt;mso-para-margin-top:
+0cm;mso-para-margin-right:0cm;mso-para-margin-bottom:0cm;mso-para-margin-left:
+0gd;mso-para-margin-bottom:.0001pt;text-align:left;text-indent:-20.0pt;
+line-height:normal;mso-list:l0 level1 lfo1;mso-layout-grid-align:none;
+word-break:keep-all'><![if !supportLists]><span lang=EN-US style='font-size:
+9.5pt;font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings;color:black;background:white;mso-highlight:white;mso-font-kerning:
+0pt'><span style='mso-list:Ignore'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>dotnet [app.dll]<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>따라하기<span
+lang=EN-US><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(1) [Windows + R] </span><span style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>키를 눌러<span
+lang=EN-US>, </span>명령 프롬프트를 실행합니다<span lang=EN-US>. iOS</span>와 리눅스에서는 그에 맞는 콘솔
+창을 엽니다<span lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(2) </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>명령 프롬프트에서 </span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:red;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>dotnet</span></b><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:red;background:white;mso-highlight:white;
+mso-font-kerning:0pt'> </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>명령어를 실행합니다<span
+lang=EN-US>. </span>아래 그림과 같이<span lang=EN-US> dotnet CLI </span>사용법을 보여줍니다<span
+lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="그림_x0020_1" o:spid="_x0000_i1037" type="#_x0000_t75"
+ style='width:198.75pt;height:90pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image001.png" o:title="01_dotnet"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=265 height=120
+src="DotNet_Cli.files/image001.png" v:shapes="그림_x0020_1"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(3) </span><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:red;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>dotnet --help</span></b><span style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>와 </span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:red;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>dotnet --info</span></b><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:red;background:white;mso-highlight:white;
+mso-font-kerning:0pt'> </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>옵션을 사용하여<span
+lang=EN-US> dotnet </span>명령어에 대한 주요 정보 및 사용법을 확인합니다<span lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_2" o:spid="_x0000_i1036" type="#_x0000_t75" style='width:475.5pt;
+ height:462pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image002.png" o:title="02_dotnet_help"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=634 height=616
+src="DotNet_Cli.files/image002.png" v:shapes="그림_x0020_2"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(4) </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>모든<span lang=EN-US>
+.NET Core </span>기반 프로그램은 콘솔 응용프로그램을 시작으로<span lang=EN-US> ASP.NET Core</span>로
+확장됩니다<span lang=EN-US>. .NET Core </span>콘솔 응용 프로그램을 만들어 보기 위해서 임시로<span
+lang=EN-US> DotNetCore</span>란 이름의 폴더를 생성하고 해당 폴더로 이동합니다<span lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_3" o:spid="_x0000_i1035" type="#_x0000_t75" style='width:153.75pt;
+ height:102pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image003.png" o:title="03_md_DotNetCore"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=205 height=136
+src="DotNet_Cli.files/image003.png" v:shapes="그림_x0020_3"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(5) dir </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>명령어로<span
+lang=EN-US> DotNetCore </span>폴더에 아무런 폴더 및 파일이 없는 것을 확인한 후 </span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:red;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>dotnet new</span></b><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'> </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>명령어로 현재 폴더<span
+lang=EN-US>(DotNetCore)</span>를<span lang=EN-US> .NET Core </span>응용 프로그램 폴더로 생성합니다<span
+lang=EN-US>. dotnet new </span>명령어를 실행하면 현재 폴더에<span lang=EN-US> Program.cs </span>파일과<span
+lang=EN-US> project.json </span>파일이 생성됩니다<span lang=EN-US>. Program.cs </span>파일은<span
+lang=EN-US> C#</span>의 엔트리 포인트인<span lang=EN-US> Main </span>메서드가 존재하는 영역이고<span
+lang=EN-US> project.json </span>파일은 현재 프로젝트 및 참조에 대한 정보를 담고 있는 파일입니다<span
+lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_4" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:345pt;
+ height:417pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image004.png" o:title="04_dotnet_new"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=460 height=556
+src="DotNet_Cli.files/image004.png" v:shapes="그림_x0020_4"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(6) </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>기본 생성된 파일의 내용을 보기 위해서<span
+lang=EN-US> Visual Studio Code</span>를 실행합니다<span lang=EN-US>. </span>현재 폴더에서 </span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:red;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>code .</span></b><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'> </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>명령어를 실행합니다<span
+lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_5" o:spid="_x0000_i1033" type="#_x0000_t75" style='width:157.5pt;
+ height:47.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image005.png" o:title="05_code_dot"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=210 height=63
+src="DotNet_Cli.files/image005.png" v:shapes="그림_x0020_5"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(7) dotnet new </span><span style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>명령어에 의해서 기본 생성된<span
+lang=EN-US> Program.cs </span>파일의 내용입니다<span lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_6" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:664.5pt;
+ height:246.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image006.png" o:title="06_Program_cs"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=886 height=329
+src="DotNet_Cli.files/image006.png" v:shapes="그림_x0020_6"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(8) </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>마찬가지로<span
+lang=EN-US> project.json </span>파일의 내용입니다<span lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_7" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:597.75pt;
+ height:320.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image007.png" o:title="07_project_json"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=797 height=427
+src="DotNet_Cli.files/image007.png" v:shapes="그림_x0020_7"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(9) Console.WriteLine() </span><span style='font-size:
+9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:
+돋움체;color:black;background:white;mso-highlight:white;mso-font-kerning:0pt'>코드의 내용을
+수정합니다<span lang=EN-US>. <o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_8" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:378.75pt;
+ height:189.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image008.png" o:title="08_HelloWorld"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=505 height=253
+src="DotNet_Cli.files/image008.png" v:shapes="그림_x0020_8"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(10) </span><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:red;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>dotnet restore</span></b><span lang=EN-US
+style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:
+돋움체;color:black;background:white;mso-highlight:white;mso-font-kerning:0pt'> </span><span
+style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:
+돋움체;color:black;background:white;mso-highlight:white;mso-font-kerning:0pt'>명령어는
+현재 응용 프로그램과 관련된 패키지<span lang=EN-US>(</span>어셈블리<span lang=EN-US>)</span>들을 다운로드
+받아서 사용 가능하도록 해줍니다<span lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_9" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:705.75pt;
+ height:498pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image009.png" o:title="09_dotnet_restore"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=941 height=664
+src="DotNet_Cli.files/image009.png" v:shapes="그림_x0020_9"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(11) </span><span style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>최종적으로 현재 프로젝트를 실행하려면
+</span><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:
+돋움체;color:red;background:white;mso-highlight:white;mso-font-kerning:0pt'>dotnet
+run</span></b><span lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'> </span><span
+style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:
+돋움체;color:black;background:white;mso-highlight:white;mso-font-kerning:0pt'>명령어를
+실행합니다<span lang=EN-US>. <o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_10" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:600pt;
+ height:228.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image010.png" o:title="10_dotnet_run"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=800 height=305
+src="DotNet_Cli.files/image010.png" v:shapes="그림_x0020_10"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'>(12) dotnet run </span><span style='font-size:9.5pt;
+mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:
+"맑은 고딕";mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:돋움체;color:black;
+background:white;mso-highlight:white;mso-font-kerning:0pt'>명령어 실행 후 프로젝트 폴더의 내용입니다<span
+lang=EN-US>. bin, obj </span>등의 폴더가 생성됩니다<span lang=EN-US>. <o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;mso-layout-grid-align:none;word-break:keep-all'><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;mso-font-kerning:0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="그림_x0020_11" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:357pt;
+ height:235.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image011.png" o:title="11_dotnet_run_bin"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=476 height=314
+src="DotNet_Cli.files/image011.png" v:shapes="그림_x0020_11"><![endif]></span><span
+lang=EN-US style='font-size:9.5pt;mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:
+minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:돋움체;color:black;background:white;mso-highlight:white;
+mso-font-kerning:0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'>(13) bin/debug/netcoreapp1.0 </span><span style='mso-ascii-font-family:
+"맑은 고딕";mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";
+mso-hansi-theme-font:minor-fareast'>폴더로 이동하면 프로젝트명<span lang=EN-US>.dll </span>파일이
+생성된 것을 확인할 수 있습니다<span lang=EN-US>. <o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="그림_x0020_12"
+ o:spid="_x0000_i1026" type="#_x0000_t75" style='width:455.25pt;height:290.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image012.png" o:title="12_dotnetcore_dll"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=607 height=387
+src="DotNet_Cli.files/image012.png" v:shapes="그림_x0020_12"><![endif]></span><span
+lang=EN-US style='mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'>(14) <b style='mso-bidi-font-weight:normal'><span
+style='color:red'>dotnet DotNetCore.dll</span></b> </span><span
+style='mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast'>명령어를 실행하여 직접 <span
+lang=EN-US>dll </span>파일로부터 콘솔 앱을 실행할 수 있습니다<span lang=EN-US>. <o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="그림_x0020_13"
+ o:spid="_x0000_i1025" type="#_x0000_t75" style='width:385.5pt;height:62.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="DotNet_Cli.files/image013.png" o:title="13_dotnet_DotNetCore_dll"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=514 height=83
+src="DotNet_Cli.files/image013.png" v:shapes="그림_x0020_13"><![endif]></span><span
+lang=EN-US style='mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-ascii-font-family:"맑은 고딕";mso-ascii-theme-font:minor-fareast;
+mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:minor-fareast'>마무리<span
+lang=EN-US><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'>.NET Core</span><span style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'>의 크로스 플랫폼 명령줄 도구인 <span lang=EN-US>dotnet </span>명령어를 사용하면 프로젝트를
+생성<span lang=EN-US>(dotnet new), </span>참조 가져오기<span lang=EN-US>(dotnet
+restore), </span>프로젝트 실행<span lang=EN-US>(dotnet run)</span>의 기능을 사용할 수 있습니다<span
+lang=EN-US>. </span>이는 <span lang=EN-US>ASP.NET Core</span>에서도 그대로 사용하는 명령어입니다<span
+lang=EN-US>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ascii-font-family:"맑은 고딕";
+mso-ascii-theme-font:minor-fareast;mso-hansi-font-family:"맑은 고딕";mso-hansi-theme-font:
+minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

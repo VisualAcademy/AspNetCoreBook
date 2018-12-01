@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Areas/Conference/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Areas/Conference/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Areas/Conference/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Areas/Conference/Content/Styles.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("WebCamps 2015", "Index", "Conference", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Conference/TechDays/AngularSpa">SPA 버전</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/">Home</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllDates">일시</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllSpeakers">발표자</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllCommunities">커뮤니티</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllTags">태그</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllSessions">세션</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="~/Chatting/SimpleChat/">채팅</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/Contact/">연락처</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div id="body">
+            @RenderBody()
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - WebCamps 2015 컨퍼런스 데모 발표용 사이트(By 박용준)</p>
+        </footer>
+    </div>
+
+
+    <script src="~/Areas/Conference/Scripts/jquery-1.9.0.min.js"></script>
+    <script src="~/Areas/Conference/Scripts/bootstrap.min.js"></script>
+    @RenderSection("scripts", required: false)
+
+
+
+    @Html.Partial("_ViewSwitcher")
+</body>
+</html>

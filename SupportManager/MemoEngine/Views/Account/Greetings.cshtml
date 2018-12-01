@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "로그인 정보";
+}
+<div>
+    &nbsp;
+</div>
+<div>
+    &nbsp;
+</div>
+
+<h2><i class="fa fa-user-plus"></i> Greetings</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span class="glyphicon glyphicon-user"></span>
+        @Session["UserID"].ToString() (@Session["UserName"].ToString()) 님의 로그인 정보는 다음과 같습니다. <br />
+    </div>
+    <div class="panel-body">
+        @if (Session["LastLoginDate"].ToString() == "")
+        {
+            <span>처음 방문 하셨습니다.</span>
+        }
+        else
+        {
+            <ul style="list-style:none;">
+                <li>
+                    <i class="fa fa-check"></i> Last Login Date: @Session["LastLoginDate"].ToString() (<span id="lblLastLoginDate"></span>)
+                </li>
+                <li>
+                    <i class="fa fa-check"></i> <text>Last Login IP:</text> @Session["LastLoginIP"].ToString()
+                </li>
+                <li>
+                    <i class="fa fa-check"></i> <text>Visit Count:</text> @Session["VisitedCount"].ToString()
+                </li>
+            </ul>
+        }
+
+    </div>
+</div>
+
+<script src="~/Scripts/moment-with-locales.min.js"></script>
+<script>
+    moment.locale("ko"); // 한글
+    document.getElementById("lblLastLoginDate").innerHTML = 
+        moment('@(Convert.ToDateTime(Session["LastLoginDate"]).ToString("yyyyMMdd hhmmss"))', 'YYYYMMDD hhmmss').fromNow();
+</script>

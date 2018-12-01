@@ -1,0 +1,49 @@
+﻿@using MemoEngine.Models
+
+@model IEnumerable<Session>
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                발표자
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room)
+            </th>
+            <th>
+                일시
+            </th>
+            <th>
+                태그
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(item.Title, "SessionByCode", new { item.Code })
+                </td>
+                <td>
+                    @Html.Partial("_SpeakersLinks", item)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Room)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateText)
+                </td>
+                <td>
+                    @Html.Partial("_TagsLinks", item)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

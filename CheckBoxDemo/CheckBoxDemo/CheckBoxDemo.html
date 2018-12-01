@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>체크박스</title>
+</head>
+<body>
+    
+    <input />
+    <input type="checkbox" />
+    <input type="checkbox" checked />
+    <input type="checkbox" checked="checked" />
+    <input type="checkbox" checked="아무값" />
+
+    <hr />
+
+    <form action="CheckBoxDemoProcess.aspx" method="post">
+        이름: <input type="text" name="Name" value="" /><br />
+        <!-- 기본값: 체크하면 "on" -->
+        결혼여부: <input type="checkbox" name="IsWedding" /><br /> 
+        <!-- value 지정: "해당값" -->
+        자동차: <input type="checkbox" name="IsCar" value="true" /><br /> 
+        취미:
+            <input type="checkbox" name="Hobby" value="B" />농구
+            <input type="checkbox" name="Hobby" value="S" />축구<br />
+        <input type="submit" value="전송" />
+    </form>
+
+</body>
+</html>

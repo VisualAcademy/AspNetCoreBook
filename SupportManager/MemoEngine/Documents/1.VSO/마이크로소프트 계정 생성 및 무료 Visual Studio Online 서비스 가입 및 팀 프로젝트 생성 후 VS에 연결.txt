@@ -1,0 +1,9 @@
+마이크로소프트 계정 생성 및 무료 Visual Studio Online 서비스 가입 및 팀 프로젝트 생성 후 VS에 연결
+
+www.outlook.com
+
+www.visualstudio.com
+
+팀 프로젝트 생성
+
+

@@ -1,0 +1,8 @@
+﻿
+Models/Entities 폴더와 ViewModels 폴더는 비슷한 용도로 사용하면 됨.
+
+
+MainNoticeViewModel로 생성 후 ViewModels 폴더에 넣을 수도 있음.
+
+
+

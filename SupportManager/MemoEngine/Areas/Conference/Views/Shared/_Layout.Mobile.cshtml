@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/jquery.mobile-1.4.2.css" rel="stylesheet" />
+    <link href="~/Content/Site.Mobile.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.0.min.js"></script>
+    <script src="~/Scripts/jquery.mobile-1.4.2.min.js"></script>
+    <script type="text/javascript">
+    $(document).bind("mobileinit", function () {
+        $.mobile.ajaxEnabled = false;
+    });
+    </script>
+</head>
+<body>
+
+
+    <div data-role="page" data-theme="b">
+        @Html.Partial("_ViewSwitcher")
+
+        <div data-role="header">
+            <a href="@Url.Action("Index", "Conference")" data-icon="gear" class="ui-btn-left">홈</a>
+            <h1>@ViewBag.Title</h1>
+            <a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032618340&culture=ko-KR" data-icon="gear" class="ui-btn-right">공식홈</a>            
+        </div>
+
+        <div data-role="content">
+            @RenderSection("featured", false)
+            @RenderBody()
+        </div>
+
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

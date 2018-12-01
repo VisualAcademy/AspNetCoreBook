@@ -1,0 +1,14 @@
+﻿@{ 
+    Layout = null;
+}
+
+<h1>대시보드 들어오는 곳</h1>
+
+<ul>
+@foreach (var dashboard in ViewBag.Dashboards)
+{
+    <li>
+        @dashboard.Id - @dashboard.Name
+    </li>
+}
+</ul>

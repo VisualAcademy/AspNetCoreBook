@@ -1,0 +1,22 @@
+﻿@model MemoEngine.Controllers.NameViewModelDemo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @Html.LabelFor(m => m.NameDemos, new { @class="form-control" })
+
+        @Html.DropDownListFor(m => m.NameDemo,
+            new SelectList(Model.NameDemos, "Id", "Name"), "-선택-", new { @class = "form-control" })
+    </div>
+</body>
+
+</html>

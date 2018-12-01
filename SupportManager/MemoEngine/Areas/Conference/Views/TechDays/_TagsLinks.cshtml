@@ -1,0 +1,7 @@
+﻿@model MemoEngine.Models.Session
+
+@foreach (var tag in Model.Tags.OrderBy(t => t))
+{
+    @Html.ActionLink(tag, "SessionsByTag", new { tag })
+    <text> </text>
+}

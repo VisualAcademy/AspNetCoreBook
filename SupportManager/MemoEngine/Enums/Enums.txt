@@ -1,0 +1,5 @@
+﻿Enums 폴더: 열거형(Enumeration)이 들어오는 곳
+
+- 프로젝트명.Enums.dll
+- 열거형 보관 장소
+- Models 폴더에 열거형 보관도 일반적임

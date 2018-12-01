@@ -1,0 +1,41 @@
+﻿Entity
+
+- Entity는 명사(사람・사물・장소・특질・활동을 가리키는 단어)임
+
+
+MemoEngine.Entities.dll
+
+
+MemoEngine.Entities.BoardEntity.cs
+MemoEngine.Entities.CommunityEntity.cs
+
+
+!.Entity들은 Identity를 가져야 함
+
+Entity는 DB의 Entity와 일대일 매칭
+
+Entity Class 만들 때 Code Snippet를 사용하여 속성 생성 가능 : prop 탭 탭
+
+
+- Entities 폴더에 있는 Entity 클래스들은 DB 연결과 직접적으로 연관이 없는 것 위주로 넣어놓을 것... 
+- 만약, DB 연결과 CRUD에 필요한 부분은 Models 폴더와 Repositories 폴더를 사용할 것.
+
+
+Entity, Class, Object 관계
+
+Entity: customer
+Class: 
+	Customer
+		- Name
+		- Age
+		- DoWork()
+Objects
+	RedPlus	
+	Taeyo
+	ITist
+
+
+Entity Relational Model: 
+- Member Has Profile Contains Interests
+- Member Creates Messages And Sent to Other Member
+

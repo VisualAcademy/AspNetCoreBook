@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+
+    ViewBag.Title = "안녕하세요. 반갑습니다. 또 만나요.";
+}
+
+@helper Truncate(string input, int length)
+{
+    if (input.Length <= length)
+    {
+        @input
+    }
+    else
+    {
+        @input.Substring(0, length)<text>...</text>
+    }
+}
+
+<h2>@Truncate(ViewBag.Title as string, 5)</h2>
+
+
+<h2>@CustomHelpers.Truncate(ViewBag.Title, 5)</h2>
+
+
+
+
+
+@helper SayHello(int FontSize, string Text)
+{
+    <div style="font-size:@(FontSize)">@Text</div>
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Say Hello</title>
+</head>
+<body>
+    <div>
+        @SayHello(40, "Hello")
+    </div>
+</body>
+</html>
+
+

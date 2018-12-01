@@ -1,0 +1,21 @@
+﻿@model IEnumerable<DateTime>
+
+@{
+    ViewBag.Title = "날짜별 세션 리스트";
+
+    DateTime lastDay = default(DateTime);
+}
+
+<h2>날짜별 세션 리스트</h2>
+
+<ul data-role="listview" data-filter="true" data-inset="true">
+    @foreach (var date in Model)
+    {
+        if (date.Date != lastDay)
+        {
+            lastDay = date.Date;
+            <li data-role="list-divider">@date.Date.ToString("yyyy-MM-dd")</li>
+        }
+        <li>@Html.ActionLink(date.ToString(), "SessionsByDate", new { date })</li>
+    }
+</ul>

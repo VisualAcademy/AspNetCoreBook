@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "초간단 채팅";
+}
+
+<h2>Simple Chatting</h2>
+
+<input type="text" id="msg" />
+<input type="button" id="send" value="전송" />
+<ul id="msgs"></ul>
+
+<script src="~/Scripts/jquery-2.1.3.min.js"></script>
+<script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+<script src="~/signalr/hubs"></script>
+<script>
+    $(function () {
+
+        //[!] 로깅 설정
+        $.connection.hub.logging = true;
+
+        //[1] 채팅 서버 연결
+        var chat = $.connection.chat;
+
+        //[2] 서버 -> 클라이언트
+        chat.client.serverToClient = function (msg) {
+            $("#msgs").append("<li>" + msg + "</li>"); // 받기
+        };
+
+        //[3] 클라이언트 -> 서버
+        $.connection.hub.start().done(function () {
+            $("#send").click(function () {
+                chat.server.clientToServer($("#msg").val()); // 전송
+            });
+        });
+
+        //[!] 예외 처리
+        $.connection.hub.error(function (err) {
+            alert("에러 발생 : " + err);
+        });
+
+    });
+</script>
+

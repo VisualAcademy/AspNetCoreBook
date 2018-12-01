@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MemoEngine.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="Content/me.css" rel="stylesheet" />
+    <link href="Content/me-footer.css" rel="stylesheet" />
+
+    <link href="Content/memoengine.min.css" rel="stylesheet" />
+
+    <%--주요 JavaScript 라이브러리 추가 --%>
+    <script src="/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/jquery-ui-1.11.2.min.js"></script>
+
+    <%--사용자 정의 JavaScript 추가--%>
+    <script src="/Scripts/me.js"></script>
+
+
+    <script>
+        // 페이지 로드시 현재 보고 있는 페이지 메뉴에 active 속성 부여
+        $(document).ready(function () {
+            var url = window.location;
+            $('ul.nav li a').each(function () {
+                if (this.href == url) {
+                    $("ul.nav li").each(function () {
+                        if ($(this).hasClass("active")) {
+                            $(this).removeClass("active");
+                        }
+                    });
+                    $(this).parent().addClass('active');
+                }
+            });
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="~/Default" runat="server">메모엔진</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="/DotNetNote/BoardList.aspx">게시판</a></li>
+                        <li><a href="/Maxim/Default.html">명언</a></li>
+                        <li><a href="<%= Page.ResolveUrl("~/About") %>">정보</a></li>
+                        <li><a href="<%= Page.ResolveUrl("~/Contact") %>">연락처</a></li>
+                        <li><a href="<%= Page.ResolveUrl("~/Conference/TechDays/Index") %>">컨퍼런스</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">예제 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Rooms">컨퍼런스 - 방 입력</a></li>
+                                <li><a href="/RoomSpeakers">컨퍼런스 - 강사 입력</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/Maxim/Default.html">명언 서비스</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+
+
+                        <% if (Session["UserID"].ToString() == "Anonymous" || Session["UserID"].ToString() == "") { %>
+                        <li>                            
+                            <a href="/Account/Login"><i class="glyphicon glyphicon-lock"></i>로그인</a>
+                        </li>
+                        <li>
+                            <a href="/Account/Register"><i class="glyphicon glyphicon-pencil"></i>회원가입</a>
+                        </li>
+                        <% }
+                           else { %>
+                        <li>                            
+                            <a href="/UserInfor.aspx"><i class="glyphicon glyphicon-user"></i><%= Session["UserID"].ToString() %> (<%= Session["UserName"].ToString() %>)</a>
+                        </li>
+                        <li>
+                            <a href="/Logout.aspx"><i class="glyphicon glyphicon-remove"></i>로그아웃</a>
+                        </li>
+                        <% } %>
+
+
+
+<%--                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>--%>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Copyright &copy; <%= DateTime.Now.Year %> All right reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

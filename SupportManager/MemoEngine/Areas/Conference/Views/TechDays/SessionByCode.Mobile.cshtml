@@ -1,0 +1,30 @@
+﻿@model MemoEngine.Models.Session
+
+@{
+    ViewBag.Title = "세션 상세 보기";
+}
+
+<h2>@Model.Title</h2>
+<p>
+    <strong>
+        일시 : @Model.StartDate.ToString()<br />
+        장소 : @Model.Room<br />
+    </strong>
+    내용 : <br />@Model.Description
+</p>
+
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">발표자</li>
+    @foreach (var speaker in Model.Speakers)
+    {
+        <li>@Html.ActionLink(speaker, "SessionsBySpeaker", new { speaker })</li>
+    }
+</ul>
+
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">태그</li>
+    @foreach (var tag in Model.Tags)
+    {
+        <li>@Html.ActionLink(tag, "SessionsByTag", new { tag })</li>
+    }
+</ul>

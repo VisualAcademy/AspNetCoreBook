@@ -1,0 +1,19 @@
+
+<h1>Speaker List <span class="glyphicon glyphicon-thumbs-up"></span></h1>
+
+<div class="container">
+    <div class="row">
+        <div ng-repeat="speaker in speakers">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                <a ng-href="#/SpeakerDetails/{{speakers.indexOf(speaker)}}" class="pull-right">
+                    <img ng-src="/Areas/Conference/Photos/{{speaker.photo}}.png" alt="{{speaker.name}}" class="img-thumbnail">
+                </a>
+                <h3>{{speaker.name}}</h3>
+                <span>{{speaker.title}}</span>
+            </div>
+            <div class="clearfix visible-xs"></div>
+        </div>
+    </div>
+</div>
+
+

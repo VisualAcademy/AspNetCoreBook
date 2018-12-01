@@ -1,0 +1,14 @@
+﻿@model IEnumerable<DateTime>
+
+@{
+    ViewBag.Title = "날짜별 세션 리스트";
+}
+
+<h2>날짜별 세션 리스트</h2>
+
+<ul>
+    @foreach (var date in Model)
+    {
+        <li>@Html.ActionLink(date.ToString(), "SessionsByDate", new { date })</li>
+    }
+</ul>

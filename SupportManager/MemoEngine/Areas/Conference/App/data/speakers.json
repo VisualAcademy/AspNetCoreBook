@@ -1,0 +1,39 @@
+﻿[
+  
+  {
+    "name": "김명신 부장",
+    "photo": "김명신 부장",
+    "title": "Microsoft",
+    "description": "한국마이크로소프트 DX, Technical Evangelist"
+  },
+  {
+    "name": "박용준 MVP",
+    "photo": "박용준 MVP",
+    "title": "MVP",
+    "description": "데브렉 전임강사"
+  },
+  {
+    "name": "박대식 MVP",
+    "photo": "박대식 MVP",
+    "title": "MVP",
+    "description": "ALM Korea"
+  },
+  {
+    "name": "한상훈 MVP",
+    "photo": "한상훈 MVP",
+    "title": "MVP",
+    "description": "넥슨 개발자"
+  },
+  {
+    "name": "김경균 MVP",
+    "photo": "김경균 MVP",
+    "title": "MVP",
+    "description": "프리랜서 개발자"
+  },
+  {
+    "name": "김태영 부장",
+    "photo": "김태영 부장",
+    "title": "Microsoft",
+    "description": "한국마이크로소프트 DX, Technical Evangelist"
+  }
+]

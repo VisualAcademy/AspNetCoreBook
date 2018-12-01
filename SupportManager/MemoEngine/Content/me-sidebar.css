@@ -1,0 +1,208 @@
+﻿/*[!] 사이드바 관련 기본 스타일 */
+.me .sidebar {
+    margin: 0;
+    padding: 0;
+    background-color: #3D3D3D;
+    width: 100%;
+    height: 100%;
+}
+
+    .me .sidebar > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .me .sidebar > ul li {
+            display: block;
+            border: 0;
+            border-bottom: 1px #5c5c5c solid;
+            position: relative;
+        }
+
+            .me .sidebar > ul li.title {
+                padding: 20px 20px 10px 20px;
+                font-family: 'Malgun Gothic', 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+                font-weight: 300;
+                font-size: 2rem;
+                letter-spacing: 0.01em;
+                line-height: 2.2rem;
+                color: #ffffff;
+            }
+
+            .me .sidebar > ul li a {
+                display: block;
+                position: relative;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #eeeeee;
+                background-color: #3D3D3D;
+            }
+
+                .me .sidebar > ul li a:hover {
+                    background-color: #262626;
+                    color: #ffffff;
+                }
+
+            .me .sidebar > ul li.stick {
+                position: relative;
+            }
+
+                .me .sidebar > ul li.stick:before {
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 40px;
+                    left: -7px;
+                    text-indent: -9999px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    background-color: inherit;
+                }
+
+            .me .sidebar > ul li.disabled a {
+                background-color: #8a8a8a;
+                cursor: default;
+                color: #555555;
+            }
+
+            .me .sidebar > ul li.active a {
+                background-color: #9a1616;
+                color: #ffffff;
+            }
+
+
+
+        /*[!] 사이드바 관련 서브 메뉴 스타일 */
+        .me .sidebar > ul ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: none;
+            z-index: 1000;
+            width: auto;
+            border: 1px solid #dcddde;
+            box-shadow: none;
+            position: relative !important;
+            background-color: #e5e5e5;
+        }
+
+            .me .sidebar > ul ul a {
+                padding: 8px 32px !important;
+                color: inherit;
+                font-size: 12px !important;
+                line-height: 14px !important;
+                cursor: pointer;
+            }
+
+
+            .me .sidebar > ul ul .divider {
+                padding: 0;
+                height: 1px;
+                margin: 9px 1px;
+                overflow: hidden;
+                background-color: #e5e5e5;
+                border-width: 0;
+            }
+
+                .me .sidebar > ul ul .divider:hover {
+                    background: #e5e5e5;
+                }
+
+
+            .me .sidebar > ul ul li {
+                display: block;
+                padding: 0;
+                vertical-align: baseline;
+                position: relative;
+                font-family: 'Malgun Gothic', 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+                margin: 5px 0 0;
+                width: 100%;
+                border: 0;
+            }
+
+                .me .sidebar > ul ul li a {
+                    display: block;
+                    text-decoration: none;
+                    font-family: 'Malgun Gothic', 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+                    font-weight: 200;
+                    letter-spacing: 0.01em;
+                    line-height: 2rem;
+                    font-size: 2rem;
+                    color: inherit;
+                    background-color: #e5e5e5;
+                }
+
+                .me .sidebar > ul ul li:hover {
+                    background: #edf4fc;
+                    border-color: #a8d2fd;
+                }
+
+                .me .sidebar > ul ul li:last-child {
+                    margin-bottom: 5px;
+                }
+
+
+                .me .sidebar > ul ul li.divider, .me .sidebar > ul ul li.divider:hover {
+                    background-color: #c2c2c2;
+                }
+
+                .me .sidebar > ul ul li.disabled, .me .sidebar > ul ul li.disabled:hover {
+                    cursor: default !important;
+                    background: transparent !important;
+                    color: #eeeeee;
+                }
+
+                    .me .sidebar > ul ul li.disabled a, .me .sidebar > ul ul li.disabled a:hover {
+                        cursor: inherit;
+                        background: inherit;
+                        color: #999999;
+                    }
+
+
+    /*[!] 사이드바 관련 테마 스타일: 기본(Dark) + Light */
+    .me .sidebar.light {
+        background-color: #ffffff;
+        border: 1px #eaeaea solid;
+    }
+
+        .me .sidebar.light li {
+            border-bottom-color: #eeeeee;
+        }
+
+            .me .sidebar.light li.title {
+                color: #1d1d1d;
+            }
+
+            .me .sidebar.light li a {
+                color: #1d1d1d;
+                background-color: #ffffff;
+            }
+
+                .me .sidebar.light li a:hover {
+                    background-color: #00aff0;
+                }
+
+            .me .sidebar.light li ul {
+                background-color: #ffffff;
+                border: 1px transparent solid;
+            }
+
+            .me .sidebar.light li .divider {
+                background-color: #eeeeee;
+            }
+
+                .me .sidebar.light li .divider:hover {
+                    background-color: #eeeeee;
+                }
+
+            .me .sidebar.light li.disabled a {
+                background-color: #ffffff;
+                cursor: default;
+                color: #999999;
+            }
+
+            .me .sidebar.light li.active a {
+                background-color: #1ba1e2;
+                color: #ffffff;
+            }

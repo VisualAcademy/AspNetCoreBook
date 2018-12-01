@@ -1,0 +1,11 @@
+﻿
+
+로컬 소스: MemoEngine
+원격 소스: VSO
+
+로컬 DB: MemoEngine
+원격 DB: SQL Azure Database: MemoEngine
+
+로컬 웹사이트: localhost:XXXX/Default.aspx
+원격 웹사이트: Azure Website: memoengine.azurewebsites.net
+

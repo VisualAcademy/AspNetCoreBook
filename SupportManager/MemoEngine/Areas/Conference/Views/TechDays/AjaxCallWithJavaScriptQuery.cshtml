@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "AjaxCallWithJavaScriptQuery";
+}
+
+<h2>AjaxCallWithJavaScriptQuery</h2>
+
+    <h3>Cors Request</h3>
+
+    <button id="getSpeakers">Get Speakers</button>
+
+    <pre id="output">
+    </pre>
+    
+    <script src="~/Areas/Conference/Scripts/jquery-1.9.0.min.js"></script>
+
+    <script>
+
+        $(function () {
+
+            var getSpeakers = function () {
+                $.get(url).always(showResponse);
+                return false;
+            };
+
+            var showResponse = function (object) {
+
+                $("#output").text(JSON.stringify(object, null, 4));
+
+            };
+
+            var url = "/api/Speakers";
+
+            $("#getSpeakers").click(getSpeakers);
+
+        });
+
+    </script>
+

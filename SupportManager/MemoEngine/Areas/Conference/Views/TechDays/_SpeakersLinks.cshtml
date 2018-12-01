@@ -1,0 +1,22 @@
+﻿@model MemoEngine.Models.Session
+
+@{
+    var index = 0; // 박용준, 홍길동 그리고 백두산
+    // 스피커 정보 출력
+    foreach (var speaker in Model.Speakers.OrderBy(s => s))
+    {
+        if (index > 0)
+        {
+            if (index == Model.Speakers.Count() - 1)
+            {
+                <text> and </text>
+            }
+            else
+            {
+                <text>, </text>
+            }
+        }
+        @Html.ActionLink(speaker, "SessionsBySpeaker", new { speaker })
+        index++;
+    }
+}

@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "2015년 03월 18일 : WebCamps 2015 개발자 컨퍼런스";
+}
+
+
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+            <h2>@ViewBag.Message</h2>
+            <h3>현재 <span style="color:red;">@(ViewBag.NumSessions)</span>개의 세션이 준비되어 있습니다.</h3>
+        </hgroup>
+        <p>
+            본 웹 사이트는 <span>2015년 03월 18일 WebCamps 2015 컨퍼런스</span> 행사의 데모 웹 사이트입니다.<br />
+            동일 웹 사이트를 데스크톱 웹 브라우저와 모바일 웹 브라우저에 최적화된 웹 페이지를 보실 수 있습니다.
+        </p>
+        <p>
+            <a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032618340&culture=ko-KR">공식 사이트 바로가기</a>
+        </p>
+    </div>
+</section>
+
+<div class="jumbotron">
+    <h1>AngularJS, Bootstrap 적용 전</h1>
+    <p>본 사이트는 AngularJS, Bootstrap을 사용하여 SPA(Single Page Application)를 적용시킬 예정입니다.</p>
+    <a href="/Index.html" class="btn btn-primary btn-lg">AngularJS와 Bootstrap 사용 SPA버전(HTML)</a>
+</div>
+
+
+
+
+<h3>본 데모 사이트에 사용된 기술 또는 기반 소프트웨어:</h3>
+
+<ol class="round">
+    <li class="one">
+        <h5>AngularJS, Bootstrap, jQuery</h5>
+        <em>AngularJS</em>와 <em>Bootstrap</em> 그리고 <em>jQuery</em>를 사용하여 현대적인 웹 프로그래밍을 할 수 있습니다.
+        
+        본 사이트는 "Modern Web Client Development (AngularJS, Bootstrap, jQuery)"란 제목에
+
+        "현대적인 웹 프로그래밍은 HTML5, CSS3, JavaScript를 비롯한 많은 구성요소를 포함합니다. 
+        이 중 전세계적으로 가장 많은 개발자로부터 주목을 받고 있는 jQuery, Bootstrap, AngularJS 등을 사용한 웹 클라이언트 개발에 대한 내용을 다룹니다."란 
+        주제를 바탕으로 제작되어졌습니다. 
+        
+    </li>
+    <li class="two">
+        <h5>Visual Studio 2013 Update 4</h5>
+        감히 세계 최고의 IDE(Integrated Development Environment) 즉, 통합 개발 환경 및 개발 도구는
+        Visual Studio 2013입니다.
+        물론, 유료이지요... 하지만, 본 웹 사이트 제작하는 데 들어가는 개발 관련 도구는 Microsoft에서
+        무료로 제공하는 <em>Visual Studio 2013 Express</em>로도 동일하게 작업할 수 있습니다.
+        VS2013의 기본 기능에 더블어 코드 조각, 인텔리센스, 리팩터링, 기본 템플릿, 젠코딩 등의 말로할 수 없는 많은 개발 편리 도구를 통해서
+        본 사이트를 만드는데 생산성 향상 및 스트레스 감소(?)를 느낄 수 있었습니다.
+    </li>
+    <li class="three">
+        <h5>ASP.NET MVC 5</h5>
+        ASP.NET MVC는 그 버전이 5.0에 이르러 데스크톱 웹 및 모바일 웹에 최적화된 웹 사이트를
+        만드는 여러가지 편리한 기능이 더해집니다.
+        모바일 웹 사이트를 다른 도메인이 아닌 동일한 도메인에서 접속 브라우저마다 달리 보여지는
+        기능을 통해서 쉽게 모바일 웹 사이트를 추가로 제작할 수 있습니다.
+        두번 작업이 아닌 1.5배 정도의 노력만 기울이면 멋진 모바일 전용 웹 페이지를 꾸밀 수 있습니다.
+    </li>
+    <li class="four">
+        <h5>HTML5</h5>
+        <em>HTML5</em>가 과연 언제 사용될지 막연하게만 생각하던게 엊그제 갔던게 굉장히 빠른 스마트폰의 보급률로
+        모바일 웹 브라우저부터는 HTML5를 사용하여 새롭게 생성된 마크업 태그들의 도움으로 좀 더
+        의미있고(<em>Semantic</em>) 구조화된 사이트를 제작할 수 있습니다. 웹 브라우저에서 본 사이트의 소스보기를
+        통한 의미있는 마크업 사용을 경험해 보시기 바랍니다.
+        참고로, HTML5가 아니더라도 모바일 시대에 웹 페이지에서 viewport 메타 태그의 사용은 필수인 듯 합니다.
+    </li>
+    <li class="five">
+        <h5>CSS3</h5>
+        CSS3의 <em>미디어 쿼리(Media Queries)</em> 기능을 사용하여 웹 브라우저의 크기에 맞는 서로 다른 UI를 꾸밀 수 있습니다.
+        본 사이트의 가로 길이가 850픽셀이 넘을 때(주로 데스트톱 환경)와
+        넘지 않을 때(주로 모바일 브라우저 환경)의 레이아웃 및 기타 모양이 달리 보여지는 기능은
+        바로 CSS3의 미디어 쿼리 기능입니다.
+    </li>
+    <li class="six">
+        <h5>JavaScript &amp; jQuery Mobile</h5>
+        이미 대세가 되어버린 <em>jQuery</em>는 대부분의 웹 사이트 제작시 기본으로 포함되어져 있습니다. 이와 더불어
+        모바일 웹에서도 그 명성을 이어가기 위해서 <em>jQuery Mobile</em>이 업데이트되어지고 있습니다.
+        본 사이트를 모바일 웹 브라우저로 볼 때 터치에 좀 더 최적화 되어있는 사이트를 jQuery Mobile의 커스텀 Attribute(data-)를
+        통해서 아주 쉽게 구현하실 수 있습니다.
+    </li>
+    <li class="seven">
+        <h5>SQL Server 2014</h5>
+        본 샘플 사이트에서 사용된 세미나 세션 정보는 XML 파일을 사용했고,
+        피드백 관련 기능은 SQL Server 2014를 사용하여 구현하였습니다.
+        이 역시도 유료가 부담되시면 SQL Server 2014 Express 및 SQL Server CE를 사용하여 무료로
+        동일한 기능을 만끽할 수 있습니다.
+        사용을 해보면 좋기때문에 이렇게라도 광고해주고픈 마음입니다.
+    </li>
+    <li class="eight">
+        <h5>NuGet</h5>
+        NuGet 패키지 관리 솔루션은 자주 사용되고 사용 순서가 복잡한 추가적인 리소스 및 오픈 소스 등을
+        좀 더 사용하기 편리하도록 해주는 또 다른 오픈 소스입니다.
+        이 사이트에서 사용된 추가 기술인 jQuery, Bootstrap, AngularJS, SignalR, Entity Framework, Scaffoding, jQuery Mobile 등등은 모두
+        NuGet Package Manager를 통해서 사이트에 쉽게 포함해서 사용할 수 있습니다.
+        이제는 더 이상 웹 브라우저를 열고 특정 오픈소스를 찾아 나설 이유가 없습니다.
+    </li>
+    <li class="nine">
+        <h5>Entity Framework Code First</h5>
+        Microsoft의 데이터 처리 기술은 ADO.NET을 기반으로 SqlHeler, Enterprise Library, LINQ to SQL
+        그리고 <em>Entity Framework</em>로 이어져 오고 있습니다.
+        그 Entity Framework의 새로운 기술인 Code First 기술을 사용하면
+        클래스 기반으로 모델링을 하여 데이터베이스를 생성할 수 있는
+        다양한 옵션(Data Annotations, Fluent API)들을 제공합니다.
+    </li>
+    <li class="ten">
+        <h5>Windows Server 2012 R2</h5>
+        <em>Windows Server 2012 R2</em> 기반의 <em>IIS 8.5</em>를 사용하여 웹 응용 프로그램을 안정적으로 제공합니다.
+        또한, Windows Server의 <em>Hyper-V</em>를 사용하면 하나의 하드웨어로 여러개의 논리적인 서버를 구성할 수 있어
+        좀 더 안정적인 서버를 운영할 수 있습니다.
+        서버 운영 비용은 부담되시는 분들은 Microsoft의 BizSpark 또는 WebsiteSpark 그리고 DreamSpark등의
+        불꽃같은 서비스를 검색해서 이용해 보시는 것도 좋습니다.
+        이 사이트는 Microsoft의 Windows Azure 서비스로 운영되고 있습니다.
+    </li>
+    <li class="eleven">
+        <h5>ASP.NET SignalR</h5>
+        SignalR은 실시간 사용자 상호작용 및 데이터 갱신이 필요한 응용 프로그램 구축을 위해 제공되는 오픈 소스 .NET 라이브러리입니다.
+        쉽고 빠르게 서버와 클라이언트간의 연결된 실시간 응용 프로그램을 개발하려면, SignalR이 최선의 선택이 될 것입니다.
+    </li>
+</ol>
+
+
+
+<section class="row">
+    <section class="col-md-4">
+        <img src="@Url.Content("~/images/aspNetHome.png")" alt="ASP.NET" />
+        <h3>Taeyo.NET</h3>
+        <p>
+            <a href="http://www.taeyo.net" title="태오닷넷">TAEYO.NET</a>은 국내 최장수 ASP/ASP.NET 커뮤니티로
+            1998년부터 운영되어 왔으며, 8만명 이상의 회원 수와 1억 이상의 뷰 카운트를 자랑하는
+            국내 최고의 ASP.NET 사이트입니다.
+            국제닷넷협회의 회원 사이트이며,
+            대표 운영자인 Taeyo는 한국인 최초로 Microsoft MVP Insider를 수상하였습니다.
+            10명 이상의 Microsoft MVP를 배출하였으며, 한국의 100대 사이트에 선정되기도 하였습니다.
+        </p>
+    </section>
+    <section class="col-md-4">
+        <img src="@Url.Content("~/images/NuGetGallery.png")" alt="NuGet" />
+        <h3>.NET Korea</h3>
+        <p>
+            <a href="http://www.dotnetkorea.com" title="닷넷코리아">닷넷코리아</a>는
+            Microsoft MVP와 MCT로 활동중인 박용준이 운영하고 있는 개인 프로그래밍 강의 노트 사이트입니다.
+            Taeyo.NET에서 더 많이 활동하고 있는터라 사실 개인 블로그는 신경을 쓰고 있지 않습니다.
+            앞으로는 좋은 정보를 제공할 지 기대해볼 수 있는 희망 있는 사이트입니다.
+        </p>
+    </section>
+    <section class="col-md-4">
+        <img src="@Url.Content("~/images/findHosting.png")" alt="Hosting" />
+        <h3>DevLec</h3>
+        <p>
+            <a href="http://www.devlec.com" title="데브렉">데브렉</a>은 국내 최고 최대의 개발자 전문 온라인 교육 사이트(유료)입니다.
+            .NET 및 Java 그리고 C/C++ 등의
+            프로그래밍 언어 교육 및 모바일 전문 교육 사이트(윈도폰, 안드로이드, 아이폰)를 지향합니다.
+            매달 정기적으로 꾸준히 업데이트되는 고화질(1024*768)의 동영상을 다운로드받아서 학습할 수 있습니다.
+        </p>
+    </section>
+</section>

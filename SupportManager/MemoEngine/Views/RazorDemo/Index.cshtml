@@ -1,0 +1,71 @@
+﻿@{ 
+    Layout = null;
+}
+
+<h1>레이저 구문 학습</h1>
+
+<h2>변수 선언 및 주석</h2>
+@{ var sum = 0; }
+@{ var msg = "안녕하세요."; }
+@{ var file = @"c:\ASPNET5\"; }
+@{ var quote = @"나는 말했다. ""ASP.NET 최고""라고... "; }
+@*@{ string comment = "주석문"; }*@
+
+<h2>인라인 표현식</h2>
+<p>합계: @sum</p>
+<p>메시지: @msg</p>
+<p>경로: @file</p>
+<p>@quote</p>
+
+<div>
+    이메일 : aspnet@dotnetkorea.com
+</div>
+<div>
+    트위터 : @@aspnet
+</div>
+
+<h2>API 호출</h2>
+<div>@Request.Url</div>
+<div>@Request.FilePath</div>
+<div>@Request.MapPath(Request.FilePath)</div>
+<div>@Request.RequestType</div>
+
+<h2>멀티 라인</h2>
+@{
+    // 변수 선언
+    string name = "박용준";
+    string userName = "RedPlus";
+    int age = 21;
+    var js = "<script>document.write('레이저 구문');</script>";
+}
+
+<div>
+    이름 : @name
+</div>
+<div>
+    if문과 결과 문을 따로할 것
+    나이 : @age (@if (age % 2 == 0)
+    {
+        <span>짝수</span> <text>나이</text>
+    }
+    else
+    {
+        <text>홀수</text>@: 나이 입니다. @DateTime.Now.Year
+                       })
+</div>
+
+<h2>fo문</h2>
+@for (int i = 0; i < 10; i++)
+{
+    <span>@i&nbsp;</span>
+}
+
+
+<div>
+    <img src="@(userName).Jpg" alt="@(userName).Jpg" />
+</div>
+<div>
+    @Html.Raw(js)
+</div>
+
+<a href="~/Home/Index">Home</a>

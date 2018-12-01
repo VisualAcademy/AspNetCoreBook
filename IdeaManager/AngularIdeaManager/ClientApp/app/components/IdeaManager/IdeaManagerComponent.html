@@ -1,0 +1,24 @@
+﻿
+<h2>아이디어 관리자</h2>
+
+<ul>
+    <li *ngFor="let idea of ideas">
+        {{idea.id}} - {{idea.note}}
+    </li>
+</ul>
+<form class="form-horizontal" role="form" #form="ngForm">
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="note">아이디어: </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="note" 
+                   placeholder="아이디어" 
+                   [(ngModel)]="note" name="note">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button class="btn btn-default"
+                    (click)="btnSave(form.value)">저장</button>
+        </div>
+    </div>
+</form>

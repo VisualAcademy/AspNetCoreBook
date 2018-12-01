@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sessions>
+
+  <!-- WebCamps 2015 Korea 개발자 컨퍼런스 -->
+  <Session>
+    <Title>Modern Web Client Development (AngularJS, Bootstrap, jQuery)</Title>
+    <Speaker>박용준 MVP</Speaker>
+    <Room>Track 2</Room>
+    <Date>2015년 03월 18일 수요일 오후 03시 30분</Date>
+    <Description>현대적인 웹 프로그래밍은 HTML5, CSS3, JavaScript를 비롯한 많은 구성요소를 포함합니다. 이 중 전세계적으로 가장 많은 개발자로부터 주목을 받고 있는 jQuery, Bootstrap, AngularJS 등을 사용한 웹 클라이언트 개발에 대한 내용을 다룹니다.</Description>
+    <Code>TechDays2014-01</Code>
+    <Community>데브렉</Community>
+    <Tag>AngularJS</Tag>
+    <Tag>Bootstrap</Tag>
+    <Tag>ASP.NET MVC 5</Tag>
+    <Tag>Entity Framework</Tag>
+    <Tag>NuGet</Tag>
+    <Tag>EF Code First</Tag>
+    <Tag>HTML5</Tag>
+    <Tag>CSS3</Tag>
+    <Tag>jQuery Mobile</Tag>
+    <Tag>Dapper dot net</Tag>
+    <Tag>Windows Azure</Tag>
+  </Session>
+
+
+
+
+
+  <Session>
+    <Title>글로벌 웹사이트 구축을 꿈꾸는 당신에게…- Azure WebSite</Title>
+    <Speaker>이건복 이사</Speaker>
+    <Speaker>김영재 MVP</Speaker>
+    <Room>Track 1</Room>
+    <Date>2015년 03월 18일 수요일 오후 01시 30분</Date>
+    <Description>
+      마이크로소프트 Azure Website를 이용한 웹 사이트 구축 시 필요한 Tip &amp; Trick과  Web Job 및 Scheduler를 이용한
+      고급 활용기법에 대해서 알아 봅니다.
+    </Description>
+    <Code>TechDays2014-02</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>Azure</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+  <Session>
+    <Title>윈도우와 윈도우폰 앱을 한번에- 유니버셜 윈도우 앱 개발</Title>
+    <Speaker>박중석 차장</Speaker>
+    <Speaker>이종인 MVP</Speaker>
+    <Room>Track 2</Room>
+    <Date>2015년 03월 18일 수요일 오후 01시 30분</Date>
+    <Description>
+      공유 프로젝트 및 포터블 클래스 라이브러리를 활용해서 윈도우와 윈도우 앱을 같이 개발하는 내용을 설명하고,
+      실제 구현 사례도 함께 보여드립니다.
+    </Description>
+    <Code>TechDays2014-03</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>Azure</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+  <Session>
+    <Title>영화속의 상상을 현실로: Intel RealSense Technology</Title>
+    <Speaker>홍승표 부장</Speaker>
+    <Room>Track 3</Room>
+    <Date>2015년 03월 18일 수요일 오후 01시 30분</Date>
+    <Description>
+      Computing device와의 Interaction 방식의 변화와 Intel RealSense Technology에 대해 소개해 드리고 Intel RealSense가 제시하는 미래의 Computing Usage들을 데모와 함께 살펴봅니다.
+    </Description>
+    <Code>TechDays2014-04</Code>
+    <Community>인텔코리아</Community>
+    <Tag>Azure</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+
+
+
+  <Session>
+    <Title>SSO를 위한 Identity 일원화를 꿈꾸며- Azure Active Directory와 서비스(앱)인증</Title>
+    <Speaker>백승주 부장</Speaker>
+    <Speaker>최한홍 사원</Speaker>
+    <Room>Track 1</Room>
+    <Date>2015년 03월 18일 수요일 오후 02시 30분</Date>
+    <Description>
+      다양한 디바이스의 증가로 인한 Identity 일원화에 대한 고민은 개발자와 IT 엔지니어 모두에게 생각해봐야 할 사항으로 자리잡고 있습니다. 본 세션에서는 Microsoft Azure Active Directory에 대한 소개, 구성 및 On-Premise Windows Server Active Directory와의 연계, 나아가 이를 통한 서비스(앱) 인증 방안에 대해서 살펴봅니다.
+    </Description>
+    <Code>TechDays2014-05</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>Azure</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+  <Session>
+    <Title>JavaScript와 TypeScript의 으리~ 있는 만남</Title>
+    <Speaker>김영욱 부장</Speaker>
+    <Room>Track 2</Room>
+    <Date>2015년 03월 18일 수요일 오후 02시 30분</Date>
+    <Description>
+      C#의 아버지인 엔더스헤일즈버그가 JavaScript와 100% 호환되는 TypeScript를 개발하여 오픈소스로 공개했습니다.
+      JavaScript와 함께 사용할 수 있으며, Web Client로부터 Node.js에서도 활용할 수 있는 있을 만큼 유연할 뿐 아니라, 생산성과 가독성이 탁월한 TypeScript를 소개 합니다.
+    </Description>
+    <Code>TechDays2014-06</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>Azure</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+  <Session>
+    <Title>Xamarin을 이용하여 C#으로 크로스 플랫폼 Native 앱 한방에 만들기</Title>
+    <Speaker>Xamarin</Speaker>
+    <Room>Track 3</Room>
+    <Date>2015년 03월 18일 수요일 오후 02시 30분</Date>
+    <Description>
+      Xamarin은 Windows Phone뿐 아니라 iOS, Android 앱을 C#을 이용하여 개발할 수 있는 프레임워크로 Business Logic뿐 아니라 UI Layer까지를 아우를 수 있는 강력한 기능을 가지고 있습니다. 강력한 C# 언어의 문법적 특성과 .NET Framework의 풍성한 기능을 이용하여 크로스 플랫폼 Native App을 개발할 수 있는 방법을 살펴봅니다.
+    </Description>
+    <Code>TechDays2014-07</Code>
+    <Community>Xamarin</Community>
+    <Tag>Xamarin</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+  <Session>
+    <Title>크로스 플랫폼을 지향하는 ALM, 당황하지 않고 VSO로 빡! 끝!</Title>
+    <Speaker>박대식 MVP</Speaker>
+    <Speaker>한상훈  MVP</Speaker>
+    <Room>Track 4</Room>
+    <Date>2015년 03월 18일 수요일 오후 02시 30분</Date>
+    <Description>
+      이제 ALM도 크로스 플랫폼이다! 다양한 개발 플랫폼을 지원해야 하는 최신 개발 트렌드에 맞춰 Visual Studio Online은 크로스 플랫폼 ALM을 제공합니다. VSO ALM에서는 TFS뿐만 아니라 Git 리파지토리도 지원하기 때문에 Windows 플랫폼은 물론이고 안드로이드와 iOS 플랫폼을 모두 지원하는 개발 수명주기 관리가 가능합니다. 크로스 플랫폼 ALM 끝판왕인 VSO를 사용하여 다양한 개발팀과의 효율적인 협업과 소통을 할 수 있는 관리 방안을 이번 세션에서 직접 확인하세요!!
+    </Description>
+    <Code>TechDays2014-08</Code>
+    <Community>(주)대학내일</Community>
+    <Tag>Xamarin</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <Session>
+    <Title>Microsoft Azure Mobile Service와 C# Mobile Service Project</Title>
+    <Speaker>김대우 부장</Speaker>
+    <Speaker>강동욱 수석 개발자</Speaker>
+    <Room>Track 1</Room>
+    <Date>2015년 03월 18일 수요일 오후 03시 30분</Date>
+    <Description>
+      Microsoft Azure Mobile Service는 Android 앱, Windows 8 스토어 앱, Windows Phone 8 앱은 물론, iOS와 같은 모바일 앱을 위한 서버 측 서비스를 단 몇 분만에 쉽게 구축 가능하도록 돕는 클라우드 서비스 입니다.
+      실제 데모를 통해, 다양한 모바일 OS를 위한 서비스를 만드는 방법을 알아봅니다.
+    </Description>
+    <Code>TechDays2014-09</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>Azure</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+
+
+  <Session>
+    <Title>Unity를 이용한 윈도우 어플리케이션 개발과 UnityVS</Title>
+    <Speaker>이영호 에반젤리스트</Speaker>
+    <Room>Track 3</Room>
+    <Date>2015년 03월 18일 수요일 오후 03시 30분</Date>
+    <Description>
+      크로스 플랫폼에서 동작하는 컨텐츠를 만들기 위한 최적의 엔진인 유니티에 대해 알아보고, UnityVS 를 이용한 스크립트 작성에 대해 알아봅니다.
+    </Description>
+    <Code>TechDays2014-10</Code>
+    <Community> 유니티 테크놀로지스 코리아</Community>
+    <Tag>Unity</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+  <Session>
+    <Title>이젠 온라인이다. 브라우저 안으로 들어온 Visual Studio!</Title>
+    <Speaker>김경균 MVP</Speaker>
+    <Speaker>한상훈 MVP</Speaker>
+    <Room>Track 4</Room>
+    <Date>2015년 03월 18일 수요일 오후 03시 30분</Date>
+    <Description>
+      VSO에서 제공하는 어마무시한 기능들을 소개합니다! 응용프로그램의 성능과 사용성 분석을 도와주는 일종의 APM 도구인 Application Insight와 브라우저 기반의 개발 편집 도구인 Monaco가 바로 그 주인공입니다! 클라우드 기반의 개발 기능과 성능 분석이 어떤 모습일지 상상해보셨나요? 이제 VSO에서는 현실입니다! 일단 드루와~ 드루와~
+    </Description>
+    <Code>TechDays2014-11</Code>
+    <Community>(주)유비베이스</Community>
+    <Tag>VSO</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <Session>
+    <Title>You! Infrastructure ALL MIGHTY- Azure IaaS</Title>
+    <Speaker>신현석 대리</Speaker>
+    <Room>Track 1</Room>
+    <Date>2015년 03월 18일 수요일 오후 04시 30분</Date>
+    <Description>
+      Microsoft Azure Mobile Service는 Android 앱, Windows 8 스토어 앱, Windows Phone 8 앱은 물론, iOS와 같은 모바일 앱을 위한 서버 측 서비스를 단 몇 분만에 쉽게 구축 가능하도록 돕는 클라우드 서비스 입니다.
+      실제 데모를 통해, 다양한 모바일 OS를 위한 서비스를 만드는 방법을 알아봅니다.
+    </Description>
+    <Code>TechDays2014-12</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>Azure</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+  <Session>
+    <Title>The Future of C# and .NET Framework</Title>
+    <Speaker>김명신 부장</Speaker>
+    <Room>Track 2</Room>
+    <Date>2015년 03월 18일 수요일 오후 04시 30분</Date>
+    <Description>
+      지속적인 발전과 혁신 속에 크로스 플랫폼/멀티 페러다임 언어로 우뚝 선 C# 언의의 현재와 더욱더 간결하고 표현력이 강화된 C# 언어의 미래를 살펴봅니다. 또한 변화되는 개발 환경에 발맞추어 개발 발전되고 있는 .NET Framework에 대해서도 살펴봅니다.
+    </Description>
+    <Code>TechDays2014-13</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>.NET</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+  <Session>
+    <Title>Java 개발자를 위한 C#</Title>
+    <Speaker>임백준 수석 개발자</Speaker>
+    <Room>Track 3</Room>
+    <Date>2015년 03월 18일 수요일 오후 04시 30분</Date>
+    <Description>
+      다양한 언어의 활용이 강조되는 폴리글랏 프로그래밍 환경에서 자바 개발자가 C#을 알아야 하는 이유와 의미에 대해서 알아보고, 자바개발자의 입장에서 자바와 C# 사이에 존재하는 주요 차이점을 짚어봅니다.
+    </Description>
+    <Code>TechDays2014-14</Code>
+    <Community>모건 스텐리 금융</Community>
+    <Tag>Java</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+  <Session>
+    <Title>Visual Studio의 다양한 진단 및 분석 도구 활용방안</Title>
+    <Speaker>김태영 부장</Speaker>
+    <Room>Track 4</Room>
+    <Date>2015년 03월 18일 수요일 오후 04시 30분</Date>
+    <Description>
+      VSO에서 제공하는 어마무시한 기능들을 소개합니다! 응용프로그램의 성능과 사용성 분석을 도와주는 일종의 APM 도구인 Application Insight와 브라우저 기반의 개발 편집 도구인 Monaco가 바로 그 주인공입니다! 클라우드 기반의 개발 기능과 성능 분석이 어떤 모습일지 상상해보셨나요? 이제 VSO에서는 현실입니다! 일단 드루와~ 드루와~
+    </Description>
+    <Code>TechDays2014-15</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>ALM</Tag>
+    <Tag>VSO</Tag>
+    <Tag>Visual Studio</Tag>
+  </Session>
+
+
+
+
+
+  <Session>
+    <Title>Keynote</Title>
+    <Speaker>사티아 나델라, 마이크로소프트 CEO</Speaker>
+    <Room>인터컨티넨탈호텔 그랜드볼룸</Room>
+    <Date>2015년 03월 18일 수요일 오전 10시 00분</Date>
+    <Description>
+      개발자 출신으로 마이크로소프트의 새로운 CEO 자리에 오른
+      사티아 나델라의 최초 방한과 함께 마련된 대한민국 개발자에게 전하는 Keynote를 놓치지 마세요!
+    </Description>
+    <Code>TDK01</Code>
+    <Community>Microsoft</Community>
+    <Tag>Device</Tag>
+    <Tag>Service</Tag>
+    <Tag>ALM</Tag>
+    <Tag>Tool</Tag>
+    <Tag>Visual Studio</Tag>
+    <Tag>Windows Phone</Tag>
+    <Tag>Windows Azure</Tag>
+  </Session>
+
+  <Session>
+    <Title>지금은 폴리글랏 프로그래밍 시대</Title>
+    <Speaker>임백준 수석 개발자</Speaker>
+    <Room>인터컨티넨탈호텔 그랜드볼룸</Room>
+    <Date>2015년 03월 18일 수요일 오전 10시 45분</Date>
+    <Description>지금은 폴리글랏 프로그래밍 시대</Description>
+    <Code>TDK02</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>한국마이크로소프트</Tag>
+    <Tag>Device</Tag>
+    <Tag>Service</Tag>
+    <Tag>ALM</Tag>
+    <Tag>Tool</Tag>
+    <Tag>Visual Studio</Tag>
+    <Tag>Windows Phone</Tag>
+    <Tag>Windows Azure</Tag>
+  </Session>
+
+
+  <Session>
+    <Title>구름을 타고 크로스 플랫폼의 세계로</Title>
+    <Speaker>마이크로소프트 에반젤리스트</Speaker>
+    <Room>인터컨티넨탈호텔 그랜드볼룸</Room>
+    <Date>2015년 03월 18일 수요일 오전 11시 15분</Date>
+    <Description>구름을 타고 크로스 플랫폼의 세계로</Description>
+    <Code>TDK03</Code>
+    <Community>한국마이크로소프트</Community>
+    <Tag>한국마이크로소프트</Tag>
+    <Tag>Device</Tag>
+    <Tag>Service</Tag>
+    <Tag>ALM</Tag>
+    <Tag>Tool</Tag>
+    <Tag>Visual Studio</Tag>
+    <Tag>Windows Phone</Tag>
+    <Tag>Windows Azure</Tag>
+  </Session>
+
+
+</Sessions>

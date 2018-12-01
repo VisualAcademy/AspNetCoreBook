@@ -1,0 +1,185 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>TechDays 2016 세션 스피커 리스트</title>
+
+    <link href="~/Areas/Conference/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Areas/Conference/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Areas/Conference/Content/Site.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">TechDays 2016</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Conference/TechDays/AngularSpa">SPA 버전</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/">Home</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllDates">일시</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllSpeakers">발표자</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllCommunities">커뮤니티</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllTags">태그</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/AllSessions">세션</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="~/Chatting/SimpleChat/">채팅</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="/Conference/TechDays/Contact/">연락처</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">등록</a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+    <div class="container body-content">        
+
+        <div class="row">
+            <div class="visible-lg col-lg-2">
+                <img src="~/Areas/Conference/Photos/Banner-TD.png" class="img-responsive" />
+            </div>
+
+            <div class="col-lg-8 col-md-12" ng-controller="controller">
+                <div class="row">
+
+                    <div class="jumbotron">
+                        <h1>{{ title }}</h1>
+                        <p>"오픈소스 및 크로스 플랫폼 개발자와의 소통" TechDays 2016 개발자 컨퍼런스에 초대합니다!</p>
+                        <p><a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032618340&culture=ko-KR" class="btn btn-info btn-lg">Learn more &raquo;</a></p>
+                        <p><a href="http://www.dotnetkorea.com/DotNetNote/BoardView?BoardName=Notice&Num=98" class="btn btn-danger btn-lg btn-block">세미나 발표 자료/소스 다운로드</a></p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h2><span class="glyphicon glyphicon-pushpin"></span> AnguarJS</h2>
+                        <p>
+                            AnguarJS은 JavaScript MVC/SPA 프레임워크입니다.
+                        </p>
+                        <p>
+                            <a href="http://www.angularjs.org" class="btn btn-primary">Learn more &raquo;</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h2><span class="glyphicon glyphicon-headphones"></span> Bootstrap</h2>
+                        <p>
+                            Bootstrap은 UI 프레임워크입니다.
+                        </p>
+                        <p>
+                            <a href="http://www.getbootstrap.com" class="btn btn-default">Learn more &raquo;</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h2><span class="glyphicon glyphicon-heart"></span> jQuery</h2>
+                        <p>
+                            jQuery는 JavaScript 프레임워크입니다.
+                        </p>
+                        <p>
+                            <a href="http://www.jquery.com" class="btn btn-success">Learn more &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="visible-lg">
+                    <br /><br /><br />
+                    <div class="alert alert-danger"><h3>양쪽 배너는 큰 화면(1200px 이상)에서만 보입니다.</h3></div>
+                </div>
+
+
+            </div>
+
+            <div class="visible-lg col-lg-2">
+                <img src="~/Areas/Conference/Photos/Banner-PYJ.png" class="img-responsive" />
+            </div>
+        </div>
+
+        <hr />
+
+
+
+        <!-- SPA 페이지가 로드될 영역 -->
+        <div class="main" ng-view></div>
+
+
+
+
+
+        <hr />
+
+        <div>
+            <p>&copy; 2016 - TechDays 2016 Demo Website</p>
+        </div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+    </div>
+
+
+
+
+    <script src="~/Areas/Conference/Scripts/jquery-1.9.0.js"></script>
+    <script src="~/Areas/Conference/Scripts/bootstrap.js"></script>
+
+    <script src="~/Areas/Conference/Scripts/angular.min.js"></script>
+    <script src="~/Areas/Conference/Scripts/angular-route.min.js"></script>
+
+    <script src="~/Areas/Conference/App/app.js"></script>
+    <script src="~/Areas/Conference/App/controller.js"></script>
+
+</body>
+</html>

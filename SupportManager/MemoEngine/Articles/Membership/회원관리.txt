@@ -1,0 +1,43 @@
+﻿
+회원관리 모듈(Modules)
+
+	테이블
+		Domains.sql
+		UserProfiles.sql
+		Membership.sql
+		LoginHistories.sql
+
+	뷰
+		Users.sql
+		Groups.sql
+	
+	저장프로시저
+		AddUser.sql
+		LoginUser.sql
+
+	클래스
+		UserViewModel.cs
+		GroupViewModel.cs
+
+	메서드
+		UserRepository.cs
+			AddUser()
+			LoginUser()
+			...					
+		GroupRepository.cs
+			GetGroupListsByUserId()
+			AddGroup()
+			...
+
+	웹폼/MVC
+		Web Forms
+			Register.aspx
+			Login.aspx
+		MVC
+			/Account/Register/
+			/Account/Login/
+			/Account/Greetings/ 
+
+	로그인 사용자
+		익명 사용자: Session["UserID"] = "Anonymous";
+		로그인 사용자: Session["UserID"] = "해당 사용자의 UserID/DomainID";

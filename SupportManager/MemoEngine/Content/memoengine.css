@@ -1,0 +1,29 @@
+﻿/* Variables */
+.subTitle1 {
+  color: #0094ff;
+}
+h2 {
+  color: #0094ff;
+}
+/* Mixins */
+.subTitle2 {
+  border-radius: 5px;
+}
+.footerSection {
+  border-radius: 10px;
+}
+/* Nested Rules */
+.subTitle3 p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.subTitle3 p a {
+  text-decoration: none;
+}
+.subTitle3 p a:hover {
+  border: 1px solid gray;
+}
+.me-gallery {
+  margin-bottom: 25px;
+}
+/*# sourceMappingURL=memoengine.css.map */

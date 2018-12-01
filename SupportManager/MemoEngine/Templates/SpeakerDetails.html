@@ -1,0 +1,34 @@
+
+<h1>Speaker Detail</h1>
+
+
+<div ng-model="speakers">
+    <ul class="pager">
+        <li><a href="#/SpeakerDetails/{{prevId}}" class="btn btn-left btn-lg">&lt;</a></li>
+        <li><a href="#/SpeakerDetails/{{nextId}}" class="btn btn-right btn-lg">&gt;</a></li>
+    </ul>
+
+
+    <div class="row">
+        <div class="col-md-2 col-xs-3">
+            <img ng-src="/Photos/{{speakers[currentId].photo}}.png">
+        </div>
+        <div class="col-md-10 col-xs-9">
+            <h1>{{speakers[currentId].name}}</h1>
+            <h3>{{speakers[currentId].title}}</h3>
+            <div class="description">{{speakers[currentId].description}}</div>
+        </div>
+    </div>
+
+
+    <ul class="pager">
+        <li><a href="#/SpeakerDetails/{{prevId}}" class="btn btn-left btn-lg">Prev</a></li>
+        <li><a href="#/SpeakerDetails/{{nextId}}" class="btn btn-right btn-lg">Next</a></li>
+    </ul>
+
+</div>
+<hr />
+<a href="/Seminar/ComCamp2015.html#/SpeakerList" class="btn btn-info btn-lg btn-block">&laquo; Speaker List</a>
+
+<br />
+<br />

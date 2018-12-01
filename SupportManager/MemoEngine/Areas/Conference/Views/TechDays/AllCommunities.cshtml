@@ -1,0 +1,14 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "참여 커뮤니티";
+}
+
+<h2>전체 커뮤니티 리스트</h2>
+
+<ul>
+    @foreach (var community in Model)
+    {
+        <li>@Html.ActionLink(community, "SessionsByCommunity", new { community })</li>
+    }
+</ul>
