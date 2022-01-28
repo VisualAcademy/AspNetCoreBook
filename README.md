@@ -15,3 +15,10 @@ https://github.com/VisualAcademy/DotNetNote
 ## ASP.NET 웹폼 파트는 변경된 내용 없음
 
 Web Forms 부분은 닷넷프레임워크 4.8 버전에서 그대로 사용하면 됩니다.
+
+
+## 강의 소개
+
+ASP.NET Web Forms 및 ASP.NET Core 관련 모든 유료 강의는
+
+데브렉(http:///www.devlec.com) 사이트를 통해서 제공됩니다.
