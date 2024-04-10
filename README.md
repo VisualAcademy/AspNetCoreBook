@@ -1,12 +1,12 @@
 # AspNetCoreBook
 
-ASP.NET &amp; Core를 다루는 기술 - 전체 소스
+ASP.NET &amp; Core를 다루는 기술 - 책과 강의 전체 소스 모음 리포지토리입니다. 
 
 ## ASP.NET &amp; Core를 다루는 기술 책의 전체 소스 모음
 
-2016년 출간된 ASP.NET &amp; Core를 다루는 기술 책의 전체 소스를 보관하는 용도의 리포지토리입니다.
+2016년 출간된 ASP.NET &amp; Core를 다루는 기술 책과 강의의 전체 소스를 보관하는 용도의 리포지토리입니다.
 
-ASP.NET Core 파트 소스는 다음 경로의 리포지토리를 통해서 버전 6.0으로 업데이트되었습니다.
+ASP.NET Core 파트 소스는 다음 경로의 리포지토리를 통해서 버전 8.0으로 업데이트되었습니다.
 
 https://github.com/VisualAcademy/DotNetNote
 
@@ -15,7 +15,6 @@ https://github.com/VisualAcademy/DotNetNote
 ## ASP.NET 웹폼 파트는 변경된 내용 없음
 
 Web Forms 부분은 닷넷프레임워크 4.8 버전에서 그대로 사용하면 됩니다.
-
 
 ## 강의 소개
 
