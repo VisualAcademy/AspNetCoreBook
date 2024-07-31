@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Company>
+  <CompanyName>닷넷코리아</CompanyName>
+  <CompanyNumber>1234</CompanyNumber>
+  <CompanyAddress>서울</CompanyAddress>
+  <CompanyAddressDetail>세울</CompanyAddressDetail>
+  <Name>레드플러스</Name>
+  <CompanyType>ff</CompanyType>
+  <CompanyStyle>gg</CompanyStyle>
+  <Operator>hh</Operator>
+  <Phone>ii</Phone>
+  <Fax>jj</Fax>
+  <Email>kk</Email>
+</Company>
